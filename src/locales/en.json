@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "categories": "Categories",
+    "about": "About",
+    "contact": "Contact",
+    "shopNow": "Shop Now"
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Discover Our Product Collection",
+    "description": "Explore our complete selection of premium technology and accessories.",
+    "allProducts": "All Products",
+    "computerAccessories": "Computer Accessories",
+    "phoneAccessories": "Phone Accessories",
+    "noProducts": "No products found in this category.",
+    "showing": "Showing",
+    "of": "of",
+    "products": "products"
+  },
+  "productDetail": {
+    "back": "Back",
+    "contact": "Contact",
+    "backToShop": "Back to Shop",
+    "keyFeatures": "Key Features",
+    "specifications": "Specifications",
+    "features": "Features",
+    "new": "NEW",
+    "productNotFound": "Product Not Found",
+    "productNotFoundDesc": "The product you're looking for doesn't exist.",
+    "goHome": "Go Home"
+  },
+  "hero": {
+    "newArrivals": "New Arrivals Available",
+    "title": "Premium",
+    "titleHighlight": "Computer & Phone",
+    "titleSuffix": "Accessories",
+    "description": "Discover premium computer accessories and phone accessories that enhance your productivity and protect your devices. Quality products for your digital lifestyle.",
+    "exploreProducts": "Explore Products",
+    "viewDeals": "View Deals",
+    "products": "Products",
+    "happyCustomers": "Happy Customers",
+    "satisfaction": "Satisfaction"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Your Trusted Partner for",
+    "subtitleHighlight": "Accessories",
+    "description1": "At Emily Hartman, we're passionate about bringing you the finest computer accessories and phone accessories. Our mission is to provide high-quality products that enhance your digital experience and protect your valuable devices.",
+    "description2": "With years of experience in the industry, we've built a reputation for quality accessories, exceptional customer service, and competitive prices. We carefully curate our selection of computer and phone accessories to ensure you get only the best.",
+    "yearsExperience": "Years Experience",
+    "happyCustomers": "Happy Customers",
+    "customerSupport": "Customer Support",
+    "getInTouch": "Get in Touch",
+    "ourLocation": "Our Location",
+    "emailUs": "Email Us",
+    "callUs": "Call Us"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's Connect",
+    "description": "Have questions or need assistance? We're here to help! Reach out to us and we'll respond as soon as possible.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "sent": "Message sent successfully!",
+    "sentDesc": "We'll get back to you as soon as possible."
+  },
+  "footer": {
+    "stayUpdated": "Stay Updated",
+    "newsletterDesc": "Subscribe to our newsletter for exclusive deals and updates.",
+    "enterEmail": "Enter your email",
+    "subscribe": "Subscribe",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "categories": "Categories",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "copyright": "© 2024 Emily Hartman. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "description": "Your trusted destination for premium computer accessories and phone accessories. Quality you can count on, service you'll love."
+  },
+  "categories": {
+    "title": "Shop by Category",
+    "subtitle": "Browse Categories",
+    "subtitleHighlight": "Category",
+    "description": "Find exactly what you're looking for in our well-organized product categories."
+  },
+  "features": {
+    "title": "Why Choose Us",
+    "subtitle": "Our",
+    "subtitleHighlight": "Features",
+    "freeShipping": "Free Shipping",
+    "freeShippingDesc": "Free delivery on all orders over $50. Fast and reliable shipping worldwide.",
+    "securePayment": "Secure Payment",
+    "securePaymentDesc": "Your payment information is protected with industry-standard encryption.",
+    "support24": "24/7 Support",
+    "support24Desc": "Our support team is here to help you anytime, day or night.",
+    "easyReturns": "Easy Returns",
+    "easyReturnsDesc": "Not satisfied? Return your product within 30 days for a full refund."
+  }
+}
+

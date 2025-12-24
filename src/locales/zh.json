@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "首页",
+    "products": "产品",
+    "categories": "分类",
+    "about": "关于",
+    "contact": "联系",
+    "shopNow": "立即购买"
+  },
+  "products": {
+    "title": "我们的产品",
+    "subtitle": "发现我们的产品系列",
+    "description": "探索我们精选的优质技术和配件产品。",
+    "allProducts": "所有产品",
+    "computerAccessories": "电脑配件",
+    "phoneAccessories": "手机配件",
+    "noProducts": "此类别中未找到产品。",
+    "showing": "显示",
+    "of": "共",
+    "products": "个产品"
+  },
+  "productDetail": {
+    "back": "返回",
+    "contact": "联系",
+    "backToShop": "返回商店",
+    "keyFeatures": "主要功能",
+    "specifications": "规格",
+    "features": "功能",
+    "new": "新品",
+    "productNotFound": "未找到产品",
+    "productNotFoundDesc": "您要查找的产品不存在。",
+    "goHome": "返回首页"
+  },
+  "hero": {
+    "newArrivals": "新品上市",
+    "title": "优质",
+    "titleHighlight": "电脑和手机",
+    "titleSuffix": "配件",
+    "description": "发现优质电脑配件和手机配件，提升您的生产力并保护您的设备。为您的数字生活方式提供优质产品。",
+    "exploreProducts": "探索产品",
+    "viewDeals": "查看优惠",
+    "products": "产品",
+    "happyCustomers": "满意客户",
+    "satisfaction": "满意度"
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "您值得信赖的",
+    "subtitleHighlight": "配件合作伙伴",
+    "description1": "在Emily Hartman，我们热衷于为您带来最优质的电脑配件和手机配件。我们的使命是提供高质量的产品，提升您的数字体验并保护您宝贵的设备。",
+    "description2": "凭借多年的行业经验，我们以优质配件、卓越客户服务和有竞争力的价格建立了声誉。我们精心策划电脑和手机配件的选择，确保您只获得最好的产品。",
+    "yearsExperience": "年经验",
+    "happyCustomers": "满意客户",
+    "customerSupport": "客户支持",
+    "getInTouch": "取得联系",
+    "ourLocation": "我们的位置",
+    "emailUs": "给我们发邮件",
+    "callUs": "给我们打电话"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "让我们联系",
+    "description": "有问题或需要帮助？我们随时为您服务！联系我们，我们会尽快回复。",
+    "name": "姓名",
+    "email": "电子邮件",
+    "subject": "主题",
+    "message": "消息",
+    "send": "发送消息",
+    "sending": "发送中...",
+    "sent": "消息发送成功！",
+    "sentDesc": "我们会尽快回复您。"
+  },
+  "footer": {
+    "stayUpdated": "保持更新",
+    "newsletterDesc": "订阅我们的新闻通讯以获取独家优惠和更新。",
+    "enterEmail": "输入您的电子邮件",
+    "subscribe": "订阅",
+    "quickLinks": "快速链接",
+    "home": "首页",
+    "categories": "分类",
+    "aboutUs": "关于我们",
+    "contactUs": "联系我们",
+    "copyright": "© 2024 Emily Hartman。保留所有权利。",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "cookiePolicy": "Cookie政策",
+    "description": "您值得信赖的优质电脑配件和手机配件目的地。您可以信赖的质量，您会喜欢的服务。"
+  },
+  "categories": {
+    "title": "按类别购物",
+    "subtitle": "浏览分类",
+    "subtitleHighlight": "类别",
+    "description": "在我们组织良好的产品类别中找到您要找的东西。"
+  },
+  "features": {
+    "title": "为什么选择我们",
+    "subtitle": "我们的",
+    "subtitleHighlight": "特色",
+    "freeShipping": "免费送货",
+    "freeShippingDesc": "所有超过$50的订单免费送货。快速可靠的全球运输。",
+    "securePayment": "安全支付",
+    "securePaymentDesc": "您的支付信息受到行业标准加密保护。",
+    "support24": "24/7支持",
+    "support24Desc": "我们的支持团队随时为您提供帮助，无论白天还是夜晚。",
+    "easyReturns": "轻松退货",
+    "easyReturnsDesc": "不满意？在30天内退回产品即可获得全额退款。"
+  }
+}
+
