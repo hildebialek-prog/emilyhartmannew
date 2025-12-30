@@ -1,247 +1,249 @@
 // ============================================
 // PRODUCT 1: mouse-led-custom
 // ============================================
-import product1Main from "@/assets/a1.jpg";        // Ảnh chính - Thay đường dẫn ở đây
-import product1Side from "@/assets/a2.jpg";        // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product1Back from "@/assets/a3.jpg";        // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product1Detail from "@/assets/a4.jpg";      // Ảnh phụ 3 - Thay đường dẫn ở đây
+import { getImagePath } from "@/utils/imageUtils";
+
+const product1Main = getImagePath("a1.jpg");
+const product1Side = getImagePath("a2.jpg");
+const product1Back = getImagePath("a3.jpg");
+const product1Detail = getImagePath("a4.jpg");
 
 // ============================================
 // PRODUCT 2: premium-noise-cancelling-headphones
 // ============================================
-import product2Main from "@/assets/b1.jpg";  // Ảnh chính - Thay đường dẫn ở đây
-import product2Side from "@/assets/b2.jpg";  // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product2Back from "@/assets/b3.jpg";  // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product2Detail from "@/assets/b4.jpg"; // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product2Main = getImagePath("b1.jpg");
+const product2Side = getImagePath("b2.jpg");
+const product2Back = getImagePath("b3.jpg");
+const product2Detail = getImagePath("b4.jpg");
 
 // ============================================
 // PRODUCT 3: smart-home-hub-pro
 // ============================================
-import product3Main from "@/assets/c1.png";  // Ảnh chính - Thay đường dẫn ở đây
-import product3Side from "@/assets/c2.jpg";  // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product3Back from "@/assets/c3.jpg";  // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product3Detail from "@/assets/c4.jpg"; // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product3Main = getImagePath("c1.png");
+const product3Side = getImagePath("c2.jpg");
+const product3Back = getImagePath("c3.jpg");
+const product3Detail = getImagePath("c4.jpg");
 
 // ============================================
 // PRODUCT 4: ultrabook-pro-16-inch
 // ============================================
-import product4Main from "@/assets/d1.jpg";      // Ảnh chính - Thay đường dẫn ở đây
-import product4Side from "@/assets/d2.jpg";      // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product4Back from "@/assets/d3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product4Detail from "@/assets/d4.jpg";    // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product4Main = getImagePath("d1.jpg");
+const product4Side = getImagePath("d2.jpg");
+const product4Back = getImagePath("d3.jpg");
+const product4Detail = getImagePath("d4.jpg");
 
 // ============================================
 // PRODUCT 5: fitness-smartwatch-series-8
 // ============================================
-import product5Main from "@/assets/e1.png";        // Ảnh chính - Thay đường dẫn ở đây
-import product5Side from "@/assets/e2.jpg";        // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product5Back from "@/assets/e3.jpg";        // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product5Detail from "@/assets/e4.jpg";       // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product5Main = getImagePath("e1.png");
+const product5Side = getImagePath("e2.jpg");
+const product5Back = getImagePath("e3.jpg");
+const product5Detail = getImagePath("e4.jpg");
 
 // ============================================
 // PRODUCT 6: wireless-pro-earbuds
 // ============================================
-import product6Main from "@/assets/f1.png";      // Ảnh chính - Thay đường dẫn ở đây
-import product6Side from "@/assets/f2.png";      // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product6Back from "@/assets/f3.png";      // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product6Detail from "@/assets/f4.png";    // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product6Main = getImagePath("f1.png");
+const product6Side = getImagePath("f2.png");
+const product6Back = getImagePath("f3.png");
+const product6Detail = getImagePath("f4.png");
 
 // ============================================
 // PRODUCT 7: mechanical-keyboard-pro
 // ============================================
-import product7Main from "@/assets/g1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product7Side from "@/assets/g2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product7Back from "@/assets/g3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product7Detail from "@/assets/g4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product7Main = getImagePath("g1.jpg");
+const product7Side = getImagePath("g2.jpg");
+const product7Back = getImagePath("g3.jpg");
+const product7Detail = getImagePath("g4.jpg");
 
 // ============================================
 // PRODUCT 8: wireless-mouse-pro
 // ============================================
-import product8Main from "@/assets/h1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product8Side from "@/assets/h2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product8Back from "@/assets/h3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product8Detail from "@/assets/h4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product8Main = getImagePath("h1.jpg");
+const product8Side = getImagePath("h2.jpg");
+const product8Back = getImagePath("h3.jpg");
+const product8Detail = getImagePath("h4.jpg");
 
 // ============================================
 // PRODUCT 9: laptop-stand-premium
 // ============================================
-import product9Main from "@/assets/i1.png";       // Ảnh chính - Thay đường dẫn ở đây
-import product9Side from "@/assets/i2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product9Back from "@/assets/i3.png";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product9Detail from "@/assets/i4.png";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product9Main = getImagePath("i1.png");
+const product9Side = getImagePath("i2.jpg");
+const product9Back = getImagePath("i3.png");
+const product9Detail = getImagePath("i4.png");
 
 // ============================================
 // PRODUCT 10: phone-case-protective
 // ============================================
-import product10Main from "@/assets/k1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product10Side from "@/assets/k2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product10Back from "@/assets/k3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product10Detail from "@/assets/k4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product10Main = getImagePath("k1.jpg");
+const product10Side = getImagePath("k2.jpg");
+const product10Back = getImagePath("k3.jpg");
+const product10Detail = getImagePath("k4.jpg");
 
 // ============================================
 // PRODUCT 11: wireless-charger-fast
 // ============================================
-import product11Main from "@/assets/l1.png";       // Ảnh chính - Thay đường dẫn ở đây
-import product11Side from "@/assets/l2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product11Back from "@/assets/l3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product11Detail from "@/assets/l4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product11Main = getImagePath("l1.png");
+const product11Side = getImagePath("l2.jpg");
+const product11Back = getImagePath("l3.jpg");
+const product11Detail = getImagePath("l4.jpg");
 
 // ============================================
 // PRODUCT 12: phone-mount-car
 // ============================================
-import product12Main from "@/assets/m1.png";       // Ảnh chính - Thay đường dẫn ở đây
-import product12Side from "@/assets/m2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product12Back from "@/assets/m3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product12Detail from "@/assets/m4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product12Main = getImagePath("m1.png");
+const product12Side = getImagePath("m2.jpg");
+const product12Back = getImagePath("m3.jpg");
+const product12Detail = getImagePath("m4.jpg");
 
 // ============================================
 // PRODUCT 13: screen-protector-tempered
 // ============================================
-import product13Main from "@/assets/n1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product13Side from "@/assets/n2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product13Back from "@/assets/n3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product13Detail from "@/assets/n4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product13Main = getImagePath("n1.jpg");
+const product13Side = getImagePath("n2.jpg");
+const product13Back = getImagePath("n3.jpg");
+const product13Detail = getImagePath("n4.jpg");
 
 // ============================================
-// PRODUCT 14-31: New Products (18 products)
+// PRODUCT 14-36: New Products
 // ============================================
 // PRODUCT 14
-import product14Main from "@/assets/o1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product14Side from "@/assets/o2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product14Back from "@/assets/o3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product14Detail from "@/assets/o4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product14Main = getImagePath("o1.jpg");
+const product14Side = getImagePath("o2.jpg");
+const product14Back = getImagePath("o3.jpg");
+const product14Detail = getImagePath("o4.jpg");
 
 // PRODUCT 15
-import product15Main from "@/assets/opp1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product15Side from "@/assets/opp2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product15Back from "@/assets/opp3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product15Detail from "@/assets/opp4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product15Main = getImagePath("opp1.jpg");
+const product15Side = getImagePath("opp2.jpg");
+const product15Back = getImagePath("opp3.jpg");
+const product15Detail = getImagePath("opp4.jpg");
 
 // PRODUCT 16
-import product16Main from "@/assets/pad1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product16Side from "@/assets/pad2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product16Back from "@/assets/pad3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product16Detail from "@/assets/pad4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product16Main = getImagePath("pad1.jpg");
+const product16Side = getImagePath("pad2.jpg");
+const product16Back = getImagePath("pad3.jpg");
+const product16Detail = getImagePath("pad4.jpg");
 
 // PRODUCT 17
-import product17Main from "@/assets/headphone1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product17Side from "@/assets/headphone2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product17Back from "@/assets/headphone3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product17Detail from "@/assets/headphone4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product17Main = getImagePath("headphone1.jpg");
+const product17Side = getImagePath("headphone2.jpg");
+const product17Back = getImagePath("headphone3.jpg");
+const product17Detail = getImagePath("headphone4.jpg");
 
 // PRODUCT 18
-import product18Main from "@/assets/mouse1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product18Side from "@/assets/mouse2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product18Back from "@/assets/mouse3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product18Detail from "@/assets/mouse4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product18Main = getImagePath("mouse1.jpg");
+const product18Side = getImagePath("mouse2.jpg");
+const product18Back = getImagePath("mouse3.jpg");
+const product18Detail = getImagePath("mouse4.jpg");
 
 // PRODUCT 19
-import product19Main from "@/assets/chuot1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product19Side from "@/assets/chuot2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product19Back from "@/assets/chuot3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product19Detail from "@/assets/chuot4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product19Main = getImagePath("chuot1.jpg");
+const product19Side = getImagePath("chuot2.jpg");
+const product19Back = getImagePath("chuot3.jpg");
+const product19Detail = getImagePath("chuot4.jpg");
 
 // PRODUCT 20
-import product20Main from "@/assets/banphim1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product20Side from "@/assets/banphim2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product20Back from "@/assets/banphim3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product20Detail from "@/assets/banphim4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product20Main = getImagePath("banphim1.jpg");
+const product20Side = getImagePath("banphim2.jpg");
+const product20Back = getImagePath("banphim3.jpg");
+const product20Detail = getImagePath("banphim4.jpg");
 
 // PRODUCT 21
-import product21Main from "@/assets/keybroad1.png";       // Ảnh chính - Thay đường dẫn ở đây
-import product21Side from "@/assets/keybroad2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product21Back from "@/assets/keybroad3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product21Detail from "@/assets/keybroad4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product21Main = getImagePath("keybroad1.png");
+const product21Side = getImagePath("keybroad2.jpg");
+const product21Back = getImagePath("keybroad3.jpg");
+const product21Detail = getImagePath("keybroad4.jpg");
 
 // PRODUCT 22
-import product22Main from "@/assets/loa1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product22Side from "@/assets/loa2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product22Back from "@/assets/loa3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product22Detail from "@/assets/loa4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product22Main = getImagePath("loa1.jpg");
+const product22Side = getImagePath("loa2.jpg");
+const product22Back = getImagePath("loa3.jpg");
+const product22Detail = getImagePath("loa4.jpg");
 
 // PRODUCT 23
-import product23Main from "@/assets/doman1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product23Side from "@/assets/doman2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product23Back from "@/assets/doman3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product23Detail from "@/assets/doman4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product23Main = getImagePath("doman1.jpg");
+const product23Side = getImagePath("doman2.jpg");
+const product23Back = getImagePath("doman3.jpg");
+const product23Detail = getImagePath("doman4.jpg");
 
 // PRODUCT 24
-import product24Main from "@/assets/denled1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product24Side from "@/assets/denled2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product24Back from "@/assets/denled3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product24Detail from "@/assets/denled4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product24Main = getImagePath("denled1.jpg");
+const product24Side = getImagePath("denled2.jpg");
+const product24Back = getImagePath("denled3.jpg");
+const product24Detail = getImagePath("denled4.jpg");
 
 // PRODUCT 25
-import product25Main from "@/assets/giado1.png";       // Ảnh chính - Thay đường dẫn ở đây
-import product25Side from "@/assets/giado2.png";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product25Back from "@/assets/giado3.png";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product25Detail from "@/assets/giado4.png";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product25Main = getImagePath("giado1.png");
+const product25Side = getImagePath("giado2.png");
+const product25Back = getImagePath("giado3.png");
+const product25Detail = getImagePath("giado4.png");
 
 // PRODUCT 26
-import product26Main from "@/assets/kecam1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product26Side from "@/assets/kecam2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product26Back from "@/assets/kecam3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product26Detail from "@/assets/kecam4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product26Main = getImagePath("kecam1.jpg");
+const product26Side = getImagePath("kecam2.jpg");
+const product26Back = getImagePath("kecam3.jpg");
+const product26Detail = getImagePath("kecam4.jpg");
 
 // PRODUCT 27
-import product27Main from "@/assets/kesac1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product27Side from "@/assets/kesac2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product27Back from "@/assets/kesac3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product27Detail from "@/assets/kesac4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product27Main = getImagePath("kesac1.jpg");
+const product27Side = getImagePath("kesac2.jpg");
+const product27Back = getImagePath("kesac3.jpg");
+const product27Detail = getImagePath("kesac4.jpg");
 
 // PRODUCT 28
-import product28Main from "@/assets/manhinh1.png";       // Ảnh chính - Thay đường dẫn ở đây
-import product28Side from "@/assets/manhinh2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product28Back from "@/assets/manhinh3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product28Detail from "@/assets/manhinh4.png";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product28Main = getImagePath("manhinh1.png");
+const product28Side = getImagePath("manhinh2.jpg");
+const product28Back = getImagePath("manhinh3.jpg");
+const product28Detail = getImagePath("manhinh4.png");
 
 // PRODUCT 29
-import product29Main from "@/assets/op1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product29Side from "@/assets/op2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product29Back from "@/assets/op3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product29Detail from "@/assets/op4.avif";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product29Main = getImagePath("op1.jpg");
+const product29Side = getImagePath("op2.jpg");
+const product29Back = getImagePath("op3.jpg");
+const product29Detail = getImagePath("op4.avif");
 
 // PRODUCT 30
-import product30Main from "@/assets/p1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product30Side from "@/assets/p2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product30Back from "@/assets/p3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product30Detail from "@/assets/p4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product30Main = getImagePath("p1.jpg");
+const product30Side = getImagePath("p2.jpg");
+const product30Back = getImagePath("p3.jpg");
+const product30Detail = getImagePath("p4.jpg");
 
 // PRODUCT 31
-import product31Main from "@/assets/q1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product31Side from "@/assets/q2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product31Back from "@/assets/q3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product31Detail from "@/assets/q4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product31Main = getImagePath("q1.jpg");
+const product31Side = getImagePath("q2.jpg");
+const product31Back = getImagePath("q3.jpg");
+const product31Detail = getImagePath("q4.jpg");
 
 // PRODUCT 32
-import product32Main from "@/assets/x1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product32Side from "@/assets/x2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product32Back from "@/assets/x3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product32Detail from "@/assets/x4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product32Main = getImagePath("x1.jpg");
+const product32Side = getImagePath("x2.jpg");
+const product32Back = getImagePath("x3.jpg");
+const product32Detail = getImagePath("x4.jpg");
 
 // PRODUCT 33
-import product33Main from "@/assets/y1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product33Side from "@/assets/y2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product33Back from "@/assets/y3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product33Detail from "@/assets/y4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product33Main = getImagePath("y1.jpg");
+const product33Side = getImagePath("y2.jpg");
+const product33Back = getImagePath("y3.jpg");
+const product33Detail = getImagePath("y4.jpg");
 
 // PRODUCT 34
-import product34Main from "@/assets/z1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product34Side from "@/assets/z2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product34Back from "@/assets/z3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product34Detail from "@/assets/z4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product34Main = getImagePath("z1.jpg");
+const product34Side = getImagePath("z2.jpg");
+const product34Back = getImagePath("z3.jpg");
+const product34Detail = getImagePath("z4.jpg");
 
 // PRODUCT 35
-import product35Main from "@/assets/mouse5.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product35Side from "@/assets/mouse6.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product35Back from "@/assets/chuot1.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product35Detail from "@/assets/chuot2.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product35Main = getImagePath("mouse5.jpg");
+const product35Side = getImagePath("mouse6.jpg");
+const product35Back = getImagePath("chuot1.jpg");
+const product35Detail = getImagePath("chuot2.jpg");
 
 // PRODUCT 36
-import product36Main from "@/assets/banphim1.jpg";       // Ảnh chính - Thay đường dẫn ở đây
-import product36Side from "@/assets/banphim2.jpg";       // Ảnh phụ 1 - Thay đường dẫn ở đây
-import product36Back from "@/assets/banphim3.jpg";       // Ảnh phụ 2 - Thay đường dẫn ở đây
-import product36Detail from "@/assets/banphim4.jpg";     // Ảnh phụ 3 - Thay đường dẫn ở đây
+const product36Main = getImagePath("banphim1.jpg");
+const product36Side = getImagePath("banphim2.jpg");
+const product36Back = getImagePath("banphim3.jpg");
+const product36Detail = getImagePath("banphim4.jpg");
 
 export interface Product {
   id: string;
@@ -265,8 +267,8 @@ export const products: Product[] = [
     images: [product1Side, product1Back, product1Detail],
     name: "Waterproof Phone Pouch - IPX8 Certified Protection Case",
     category: "Phone Accessories",
-    price: 999,
-    originalPrice: 1199,
+    price: 7.99,
+    originalPrice: 12.99,
     rating: 4.8,
     isNew: true,
     description: "Protect your smartphone from water and environmental elements with our premium waterproof phone pouch. The transparent design allows you to use your phone even while it's in the pouch, perfect for outdoor activities, swimming, and travel. IPX8 certified protection ensures your device stays safe up to 30 meters underwater.",
@@ -293,7 +295,8 @@ export const products: Product[] = [
     images: [product2Side, product2Back, product2Detail],
     name: "Wireless Bluetooth Headphones - Premium Audio Experience",
     category: "Computer Accessories",
-    price: 349,
+    price: 49.99,
+    originalPrice: 79.99,
     rating: 4.9,
     isNew: true,
     description: "Experience high-quality wireless audio with our premium Bluetooth headphones. Featuring comfortable design, extended battery life, and superior sound quality for the perfect music listening and calling experience. Advanced noise cancellation technology ensures crystal-clear audio in any environment.",
@@ -320,8 +323,8 @@ export const products: Product[] = [
     images: [product3Side, product3Back, product3Detail],
     name: "Stainless Steel Tripod Phone Stand - Adjustable 3-Leg Design",
     category: "Phone Accessories",
-    price: 199,
-    originalPrice: 249,
+    price: 16.99,
+    originalPrice: 24.99,
     rating: 4.7,
     description: "Premium stainless steel tripod phone stand with sturdy and stable 3-leg design. Allows you to watch videos and make video calls comfortably without holding your phone. Features flexible angle adjustment and universal compatibility with all smartphone models.",
     features: [
@@ -347,8 +350,8 @@ export const products: Product[] = [
     images: [product4Side, product4Back, product4Detail],
     name: "Magnetic Wireless Charger Phone Case - Integrated Power Bank",
     category: "Phone Accessories",
-    price: 1599,
-    originalPrice: 1899,
+    price: 34.99,
+    originalPrice: 49.99,
     rating: 4.9,
     description: "Convenient phone case with integrated wireless charging capability. Protects your phone while providing on-the-go charging power. Features slim lightweight design, fast charging technology, and wide compatibility with multiple phone models.",
     features: [
@@ -373,8 +376,9 @@ export const products: Product[] = [
     image: product5Main,
     images: [product5Side, product5Back, product5Detail],
     name: "Webcam Clamp Mount - Adjustable Camera Stand for Monitor",
-    category: "phone Accessories",
-    price: 399,
+    category: "Phone Accessories",
+    price: 19.99,
+    originalPrice: 29.99,
     rating: 4.6,
     isNew: true,
     description: "Perfect your video calls and streaming setup with our versatile Webcam Clamp Mount. This adjustable camera stand securely attaches to your monitor or desk, providing the ideal angle for webcams, ring lights, and microphones. Features 360-degree rotation, sturdy construction, and universal compatibility with all standard webcams and accessories.",
@@ -401,8 +405,8 @@ export const products: Product[] = [
     images: [product6Side, product6Back, product6Detail],
     name: "Premium USB-C Fast Charging Cable - High-Speed Data Transfer",
     category: "Phone Accessories",
-    price: 179,
-    originalPrice: 229,
+    price: 9.99,
+    originalPrice: 16.99,
     rating: 4.5,
     description: "Premium USB-C cable with fast charging capability and high-speed data transfer. Features durable construction, anti-breakage design, and universal compatibility with all USB-C devices.",
     features: [
@@ -428,8 +432,8 @@ export const products: Product[] = [
     images: [product7Side, product7Back, product7Detail],
     name: "Premium Leather Mouse Pad - Luxury Office & Gaming Surface",
     category: "Computer Accessories",
-    price: 129,
-    originalPrice: 159,
+    price: 24.99,
+    originalPrice: 34.99,
     rating: 4.7,
     isNew: true,
     description: "Premium leather mouse pad with smooth surface and effective anti-slip design. Features elegant styling, easy cleaning, and enhanced mouse precision. Perfect for both office work and gaming.",
@@ -456,8 +460,8 @@ export const products: Product[] = [
     images: [product8Side, product8Back, product8Detail],
     name: "Premium Laptop Sleeve - Shockproof & Water-Resistant Protection",
     category: "Computer Accessories",
-    price: 79,
-    originalPrice: 99,
+    price: 19.99,
+    originalPrice: 29.99,
     rating: 4.6,
     description: "Protect your laptop with our premium laptop sleeve. Features shockproof material, light water resistance, and compact lightweight design. Available in multiple sizes to fit all laptops from 13 inch to 17 inch.",
     features: [
@@ -483,7 +487,8 @@ export const products: Product[] = [
     images: [product9Side, product9Back, product9Detail],
     name: "HM66 Mechanical Keyboard - Compact RGB Gaming Keyboard",
     category: "Computer Accessories",
-    price: 59,
+    price: 69.99,
+    originalPrice: 99.99,
     rating: 4.5,
     description: "HM66 mechanical keyboard featuring high-quality mechanical switches, stunning RGB backlighting, and compact 66-key design. Perfect for gaming and professional work with superior typing accuracy and speed.",
     features: [
@@ -509,8 +514,8 @@ export const products: Product[] = [
     images: [product10Side, product10Back, product10Detail],
     name: "32\" 4K UHD Monitor - 75Hz IPS Display (3840x2160)",
     category: "Computer Accessories",
-    price: 29,
-    originalPrice: 39,
+    price: 399.99,
+    originalPrice: 549.99,
     rating: 4.8,
     isNew: true,
     description: "32-inch 4K monitor with UHD resolution 3840x2160 and 75Hz refresh rate. IPS technology delivers true-to-life colors, wide viewing angles, and exceptional image quality for both work and entertainment.",
@@ -537,8 +542,8 @@ export const products: Product[] = [
     images: [product11Side, product11Back, product11Detail],
     name: "Ergonomic Office Chair - Premium Lumbar Support & Adjustable Design",
     category: "Computer Accessories",
-    price: 39,
-    originalPrice: 49,
+    price: 199.99,
+    originalPrice: 269.99,
     rating: 4.7,
     description: "Premium ergonomic office chair with spine-supporting design that reduces fatigue during long sitting sessions. Features adjustable height, backrest tilt, and flexible armrests. Made from premium breathable materials for durability and comfort.",
     features: [
@@ -564,7 +569,8 @@ export const products: Product[] = [
     images: [product12Side, product12Back, product12Detail],
     name: "Premium Gaming Chair - RGB LED Racing Style with Full Body Support",
     category: "Computer Accessories",
-    price: 24,
+    price: 249.99,
+    originalPrice: 349.99,
     rating: 4.6,
     description: "Premium gaming chair with racing-style design, RGB LED lighting, and full body support. Features thick memory foam padding, adjustable headrest and backrest, and high-load capacity casters. Perfect for professional gamers.",
     features: [
@@ -590,8 +596,8 @@ export const products: Product[] = [
     images: [product13Side, product13Back, product13Detail],
     name: "Premium Office Chair - Professional Design with Lumbar Support",
     category: "Computer Accessories",
-    price: 19,
-    originalPrice: 29,
+    price: 159.99,
+    originalPrice: 219.99,
     rating: 4.9,
     isNew: true,
     description: "Premium office chair with professional design, durable materials, and excellent lumbar support. Features flexible height and tilt angle adjustments, perfect for modern office spaces.",
@@ -618,8 +624,8 @@ export const products: Product[] = [
     images: [product14Side, product14Back, product14Detail],
     name: "Mobile Game Controller - Clip-On Phone Gaming Accessory",
     category: "Phone Accessories",
-    price: 49,
-    originalPrice: 69,
+    price: 24.99,
+    originalPrice: 34.99,
     rating: 4.7,
     description: "Clip-on game controller that transforms your smartphone into a professional mobile gaming device. Features compact lightweight design, wide compatibility, and precise controls for the ultimate gaming experience.",
     features: [
@@ -645,8 +651,8 @@ export const products: Product[] = [
     images: [product15Side, product15Back, product15Detail],
     name: "Premium Magnetic Phone Case - Integrated Magnetic Mount",
     category: "Phone Accessories",
-    price: 39,
-    originalPrice: 55,
+    price: 19.99,
+    originalPrice: 29.99,
     rating: 4.6,
     description: "Premium phone case with integrated magnetic mount technology. Features strong magnetic attachment for easy mounting on magnetic surfaces, while providing excellent protection for your smartphone. Perfect for car mounts, desk stands, and magnetic accessories.",
     features: [
@@ -672,8 +678,8 @@ export const products: Product[] = [
     images: [product16Side, product16Back, product16Detail],
     name: "Mouse Pad - Extra Large Waterproof Gaming Pad",
     category: "Computer Accessories",
-    price: 59,
-    originalPrice: 79,
+    price: 16.99,
+    originalPrice: 24.99,
     rating: 4.5,
     description: "Enhance your gaming and workspace with our Extra Large Mouse Pad. Waterproof surface, smooth tracking, and premium materials for the perfect setup.",
     features: [
@@ -699,8 +705,8 @@ export const products: Product[] = [
     images: [product17Side, product17Back, product17Detail],
     name: "Premium Headphones - Wireless Noise Cancelling",
     category: "Computer Accessories",
-    price: 29,
-    originalPrice: 39,
+    price: 79.99,
+    originalPrice: 119.99,
     rating: 4.8,
     description: "Experience premium audio with our Wireless Noise Cancelling Headphones. Featuring superior sound quality, active noise cancellation, and long battery life for music lovers and professionals.",
     features: [
@@ -726,7 +732,8 @@ export const products: Product[] = [
     images: [product18Side, product18Back, product18Detail],
     name: "Gaming Mouse - Wireless RGB Mouse with Precision Tracking",
     category: "Computer Accessories",
-    price: 15,
+    price: 44.99,
+    originalPrice: 64.99,
     rating: 4.4,
     description: "Experience precision gaming with our Wireless RGB Gaming Mouse. Featuring advanced optical sensor, customizable RGB lighting, and ergonomic design for comfortable extended use. Perfect for both gaming and professional work.",
     features: [
@@ -752,8 +759,8 @@ export const products: Product[] = [
     images: [product19Side, product19Back, product19Detail],
     name: "Gaming Mouse - Wireless RGB Mouse with Ergonomic Design",
     category: "Computer Accessories",
-    price: 12,
-    originalPrice: 18,
+    price: 34.99,
+    originalPrice: 49.99,
     rating: 4.7,
     description: "Enhance your gaming experience with our Wireless RGB Gaming Mouse. Featuring ergonomic design, customizable RGB lighting, and precision tracking for both gaming and professional use.",
     features: [
@@ -779,8 +786,8 @@ export const products: Product[] = [
     images: [product20Side, product20Back, product20Detail],
     name: "Mechanical Keyboard - RGB Gaming Keyboard",
     category: "Computer Accessories",
-    price: 25,
-    originalPrice: 35,
+    price: 89.99,
+    originalPrice: 129.99,
     rating: 4.6,
     description: "Dominate your gaming and typing experience with our Mechanical Gaming Keyboard. Featuring premium mechanical switches, stunning RGB backlighting, and durable construction for gamers and professionals.",
     features: [
@@ -806,8 +813,8 @@ export const products: Product[] = [
     images: [product21Side, product21Back, product21Detail],
     name: "Mechanical Keyboard - RGB Backlit Gaming Keyboard",
     category: "Computer Accessories",
-    price: 14,
-    originalPrice: 20,
+    price: 79.99,
+    originalPrice: 109.99,
     rating: 4.8,
     description: "Experience premium typing and gaming with our Mechanical RGB Gaming Keyboard. Featuring mechanical switches, customizable RGB backlighting, and professional-grade build quality.",
     features: [
@@ -833,8 +840,8 @@ export const products: Product[] = [
     images: [product22Side, product22Back, product22Detail],
     name: "Bluetooth Speaker - Portable Wireless Speaker",
     category: "Computer Accessories",
-    price: 8,
-    originalPrice: 15,
+    price: 29.99,
+    originalPrice: 49.99,
     rating: 4.3,
     description: "Enjoy premium audio quality with our Portable Bluetooth Speaker. Featuring powerful sound, long battery life, and water-resistant design for music lovers on the go.",
     features: [
@@ -860,8 +867,8 @@ export const products: Product[] = [
     images: [product23Side, product23Back, product23Detail],
     name: "Monitor Stand - Adjustable Desktop Riser",
     category: "Computer Accessories",
-    price: 19,
-    originalPrice: 29,
+    price: 39.99,
+    originalPrice: 59.99,
     rating: 4.5,
     description: "Organize and elevate your workspace with our Adjustable Monitor Stand. Features built-in storage, cable management, and ergonomic design for a cleaner workspace.",
     features: [
@@ -887,8 +894,8 @@ export const products: Product[] = [
     images: [product24Side, product24Back, product24Detail],
     name: "RGB LED Strip Light - Smart Color Changing",
     category: "Computer Accessories",
-    price: 24,
-    originalPrice: 35,
+    price: 19.99,
+    originalPrice: 29.99,
     rating: 4.6,
     description: "Transform your workspace with our RGB LED Strip Lights. Featuring millions of color options, smart app control, and music sync for the perfect ambient lighting.",
     features: [
@@ -914,8 +921,8 @@ export const products: Product[] = [
     images: [product25Side, product25Back, product25Detail],
     name: "Premium Steel Laptop Stand - Adjustable Ergonomic Riser",
     category: "Computer Accessories",
-    price: 22,
-    originalPrice: 32,
+    price: 44.99,
+    originalPrice: 64.99,
     rating: 4.7,
     description: "Premium steel laptop stand with adjustable height and ergonomic design. Made from high-quality stainless steel for durability and stability. Elevates your laptop to the perfect viewing angle, reducing neck and eye strain while improving airflow for better cooling.",
     features: [
@@ -941,8 +948,8 @@ export const products: Product[] = [
     images: [product26Side, product26Back, product26Detail],
     name: "Webcam Clamp Mount - Adjustable Camera Stand",
     category: "Computer Accessories",
-    price: 45,
-    originalPrice: 65,
+    price: 19.99,
+    originalPrice: 29.99,
     rating: 4.5,
     description: "Perfect your video calls with our Webcam Clamp Mount. Features 360-degree rotation, sturdy construction, and universal compatibility with all standard webcams.",
     features: [
@@ -968,8 +975,8 @@ export const products: Product[] = [
     images: [product27Side, product27Back, product27Detail],
     name: "Smart Phone Charger with Integrated Watch Charger - Dual Charging Station",
     category: "Phone Accessories",
-    price: 9,
-    originalPrice: 15,
+    price: 34.99,
+    originalPrice: 49.99,
     rating: 4.9,
     description: "Intelligent phone charger with integrated smartwatch charging capability. Charge both your smartphone and smartwatch simultaneously from a single charging station. Features fast charging technology, LED indicators, and compact design perfect for your desk or nightstand.",
     features: [
@@ -995,8 +1002,8 @@ export const products: Product[] = [
     images: [product28Side, product28Back, product28Detail],
     name: "Computer Monitor - Full HD IPS Display",
     category: "Computer Accessories",
-    price: 28,
-    originalPrice: 40,
+    price: 159.99,
+    originalPrice: 229.99,
     rating: 4.6,
     description: "Enhance your computing experience with our Full HD IPS Monitor. Features vibrant colors, wide viewing angles, and multiple connectivity options for work and gaming.",
     features: [
@@ -1022,8 +1029,8 @@ export const products: Product[] = [
     images: [product29Side, product29Back, product29Detail],
     name: "Premium Phone Case with Integrated Ring Stand - Round Stand Design",
     category: "Phone Accessories",
-    price: 18,
-    originalPrice: 28,
+    price: 16.99,
+    originalPrice: 24.99,
     rating: 4.4,
     description: "Premium phone case with integrated round ring stand. Features a built-in circular stand that allows hands-free viewing and video calls. Provides excellent protection while adding convenient stand functionality. Perfect for watching videos, video calls, and hands-free use.",
     features: [
@@ -1049,8 +1056,8 @@ export const products: Product[] = [
     images: [product30Side, product30Back, product30Detail],
     name: "Silicone Phone Case - Flexible Protective Cover",
     category: "Phone Accessories",
-    price: 15,
-    originalPrice: 25,
+    price: 10.99,
+    originalPrice: 17.99,
     rating: 4.7,
     description: "Protect your smartphone with our premium silicone phone case. Made from high-quality flexible silicone material that provides excellent shock absorption and grip. Features precise cutouts for all ports and buttons, ensuring full functionality while maintaining your phone's sleek design.",
     features: [
@@ -1076,8 +1083,8 @@ export const products: Product[] = [
     images: [product31Side, product31Back, product31Detail],
     name: "High Quality Soft Stretch Silicon Wristband - Universal Phone Cover",
     category: "Phone Accessories",
-    price: 16,
-    originalPrice: 24,
+    price: 7.99,
+    originalPrice: 12.99,
     rating: 4.5,
     description: "Universal silicone wristband designed as a mobile phone cover. Made from high-quality soft stretch silicone material that provides flexible protection and comfortable grip. Easy to install and remove, perfect for keeping your phone secure while maintaining easy access.",
     features: [
@@ -1103,8 +1110,8 @@ export const products: Product[] = [
     images: [product32Side, product32Back, product32Detail],
     name: "Best Work From Home Luxury Zero Gravity Genuine Leather Chair with Massage Predator Thronos Imperator Works IW R1",
     category: "Computer Accessories",
-    price: 899,
-    originalPrice: 1199,
+    price: 1099.99,
+    originalPrice: 1499.99,
     rating: 4.9,
     isNew: true,
     description: "Premium luxury zero gravity genuine leather office chair with built-in massage function. Features ergonomic zero gravity design, premium genuine leather upholstery, advanced massage system, and adjustable settings. Perfect for long work sessions, providing ultimate comfort and relaxation while working from home.",
@@ -1131,8 +1138,8 @@ export const products: Product[] = [
     images: [product33Side, product33Back, product33Detail],
     name: "21 24inch 27 32 Smart Touch Moving Screen Build in Battery Digital Signage LCD Kiosk Portable Television",
     category: "Computer Accessories",
-    price: 599,
-    originalPrice: 799,
+    price: 799.99,
+    originalPrice: 1099.99,
     rating: 4.7,
     isNew: true,
     description: "Smart touch portable digital signage display with built-in battery. Available in multiple sizes (21, 24, 27, 32 inch). Features touch screen technology, built-in rechargeable battery, and versatile mounting options. Perfect for digital signage, kiosks, presentations, and portable display solutions.",
@@ -1159,8 +1166,8 @@ export const products: Product[] = [
     images: [product34Side, product34Back, product34Detail],
     name: "Black Gaming Chair PC Gaming Chair Ergonomic Customizable Silla Gamer Work Chair Lumbar Support Reclining E-Sports Style",
     category: "Computer Accessories",
-    price: 299,
-    originalPrice: 399,
+    price: 299.99,
+    originalPrice: 399.99,
     rating: 4.8,
     isNew: true,
     description: "Premium black gaming chair with ergonomic design and customizable features. Features adjustable lumbar support, reclining function, and E-sports style design. Perfect for gaming sessions, work from home, and long hours of computer use. Provides excellent comfort and support for your back and neck.",
@@ -1187,8 +1194,8 @@ export const products: Product[] = [
     images: [product35Side, product35Back, product35Detail],
     name: "Wireless Gaming Mouse Pro - High Precision RGB Mouse",
     category: "Computer Accessories",
-    price: 79,
-    originalPrice: 99,
+    price: 59.99,
+    originalPrice: 79.99,
     rating: 4.6,
     isNew: true,
     description: "Professional wireless gaming mouse with high-precision optical sensor and customizable RGB lighting. Features ergonomic design, long battery life, and ultra-responsive tracking. Perfect for gaming and professional work.",
@@ -1215,8 +1222,8 @@ export const products: Product[] = [
     images: [product36Side, product36Back, product36Detail],
     name: "Compact Mechanical Keyboard - RGB Backlit Gaming Keyboard",
     category: "Computer Accessories",
-    price: 69,
-    originalPrice: 89,
+    price: 64.99,
+    originalPrice: 89.99,
     rating: 4.7,
     description: "Compact mechanical keyboard with stunning RGB backlighting and premium mechanical switches. Features space-saving design, anti-ghosting technology, and durable construction. Perfect for gaming and professional typing.",
     features: [

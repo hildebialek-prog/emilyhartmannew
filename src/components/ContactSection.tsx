@@ -115,29 +115,29 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-gradient-hero">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 lg:py-32 bg-gradient-hero">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-8 sm:mb-12 md:mb-16"
         >
-          <span className="text-primary font-semibold text-sm tracking-wider uppercase">
+          <span className="text-primary font-semibold text-xs sm:text-sm tracking-wider uppercase">
             Contact Us
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-3 sm:mt-4 mb-4 sm:mb-6">
             Let's <span className="text-gradient">Connect</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-sm sm:text-base md:text-lg">
             Have questions or need assistance? We're here to help! 
             Reach out to us and we'll respond as soon as possible.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -146,11 +146,11 @@ const ContactSection = () => {
             transition={{ duration: 0.6 }}
             className="flex flex-col"
           >
-            <div className="bg-card rounded-3xl p-8 md:p-10 shadow-elevated h-full flex flex-col">
-              <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
+            <div className="bg-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-elevated h-full flex flex-col">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Send us a Message</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
                       Your Name
@@ -250,21 +250,21 @@ const ContactSection = () => {
             className="flex flex-col space-y-6"
           >
             {/* Google Maps */}
-            <div className="bg-card rounded-2xl p-6 shadow-card">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center shrink-0">
-                  <MapPin className="w-6 h-6 text-primary-foreground" />
+            <div className="bg-card rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-card">
+              <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-gradient-primary flex items-center justify-center shrink-0">
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
                 </div>
                 <div className="flex-1">
-                  <h4 className="font-semibold mb-1">Visit Us</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{companyInfo.address}</p>
+                  <h4 className="font-semibold mb-1 text-sm sm:text-base">Visit Us</h4>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">{companyInfo.address}</p>
                 </div>
               </div>
-              <div className="rounded-xl overflow-hidden shadow-md mb-4">
+              <div className="rounded-lg sm:rounded-xl overflow-hidden shadow-md mb-3 sm:mb-4">
                 <iframe
                   src={`https://www.google.com/maps?q=${encodeURIComponent(companyInfo.address)}&output=embed`}
                   width="100%"
-                  height="250"
+                  height="200"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"

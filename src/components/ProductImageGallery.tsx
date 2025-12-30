@@ -26,10 +26,10 @@ const ProductImageGallery = ({ mainImage, images, productName }: ProductImageGal
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-3 sm:space-y-4">
       {/* Main Image Container */}
       <div className="relative group">
-        <div className="bg-card rounded-2xl overflow-hidden shadow-card aspect-square">
+        <div className="bg-card rounded-xl sm:rounded-2xl overflow-hidden shadow-card aspect-square">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -53,20 +53,20 @@ const ProductImageGallery = ({ mainImage, images, productName }: ProductImageGal
               <Button
                 variant="secondary"
                 size="icon"
-                className="absolute left-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-background/80 backdrop-blur-sm hover:bg-background shadow-lg hover:-translate-x-1"
+                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-all duration-300 bg-background/90 sm:bg-background/80 backdrop-blur-sm hover:bg-background shadow-lg hover:-translate-x-1 h-8 w-8 sm:h-10 sm:w-10"
                 onClick={handlePrevious}
                 aria-label="Previous image"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
               <Button
                 variant="secondary"
                 size="icon"
-                className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-background/80 backdrop-blur-sm hover:bg-background shadow-lg hover:translate-x-1"
+                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-all duration-300 bg-background/90 sm:bg-background/80 backdrop-blur-sm hover:bg-background shadow-lg hover:translate-x-1 h-8 w-8 sm:h-10 sm:w-10"
                 onClick={handleNext}
                 aria-label="Next image"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
             </>
           )}
@@ -93,12 +93,12 @@ const ProductImageGallery = ({ mainImage, images, productName }: ProductImageGal
 
       {/* Thumbnail Gallery */}
       {allImages.length > 1 && (
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-4 gap-2 sm:gap-3">
           {allImages.map((image, index) => (
             <motion.button
               key={index}
               onClick={() => handleThumbnailClick(index)}
-              className={`relative aspect-square rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+              className={`relative aspect-square rounded-md sm:rounded-lg overflow-hidden border-2 transition-all duration-300 ${
                 index === currentIndex
                   ? "border-primary shadow-lg scale-105"
                   : "border-transparent hover:border-primary/50 hover:scale-102"

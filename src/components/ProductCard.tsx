@@ -7,6 +7,8 @@ interface ProductCardProps {
   image: string;
   name: string;
   category: string;
+  price: number;
+  originalPrice?: number;
   rating: number;
   isNew?: boolean;
   index: number;
@@ -19,6 +21,8 @@ const ProductCard = ({
   image,
   name,
   category,
+  price,
+  originalPrice,
   rating,
   isNew,
   index,
@@ -76,6 +80,20 @@ const ProductCard = ({
           <h3 className="font-semibold text-lg mb-2 line-clamp-2 group-hover:text-primary transition-colors">
             {name}
           </h3>
+          
+          {/* Price */}
+          <div className="mb-2">
+            <div className="flex items-center gap-2">
+              <span className="text-xl font-bold text-primary">
+                ${price.toFixed(2)}
+              </span>
+              {originalPrice && originalPrice > price && (
+                <span className="text-sm text-muted-foreground line-through">
+                  ${originalPrice.toFixed(2)}
+                </span>
+              )}
+            </div>
+          </div>
           
           {/* Rating */}
           <div className="flex items-center gap-1">

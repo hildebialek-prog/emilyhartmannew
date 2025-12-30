@@ -65,13 +65,13 @@ const ProductDetail = () => {
 
       <div className="min-h-screen">
         <Navbar />
-        <main className="pt-20 md:pt-24">
+        <main className="pt-16 sm:pt-20 md:pt-24">
           {/* Back Button */}
-          <div className="container mx-auto px-4 py-6">
+          <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-6">
             <Button
               variant="ghost"
               onClick={handleBack}
-              className="mb-4"
+              className="mb-2 sm:mb-4 text-sm sm:text-base"
               aria-label={t("productDetail.back")}
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
@@ -80,14 +80,14 @@ const ProductDetail = () => {
           </div>
 
           {/* Product Content */}
-          <div className="container mx-auto px-4 pb-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="container mx-auto px-4 sm:px-6 pb-12 sm:pb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
               {/* Product Image Gallery */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
-                className="sticky top-24"
+                className="lg:sticky lg:top-24"
               >
                 <ProductImageGallery
                   mainImage={product.image}
@@ -116,9 +116,28 @@ const ProductDetail = () => {
                   </div>
 
                   {/* Product Name */}
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                     {product.name}
                   </h1>
+
+                  {/* Price */}
+                  <div className="flex items-center gap-4">
+                    <div className="flex items-baseline gap-3">
+                      <span className="text-3xl sm:text-4xl font-bold text-primary">
+                        ${product.price.toFixed(2)}
+                      </span>
+                      {product.originalPrice && product.originalPrice > product.price && (
+                        <span className="text-lg sm:text-xl text-muted-foreground line-through">
+                          ${product.originalPrice.toFixed(2)}
+                        </span>
+                      )}
+                    </div>
+                    {product.originalPrice && product.originalPrice > product.price && (
+                      <span className="bg-accent text-accent-foreground text-sm font-semibold px-3 py-1 rounded-full">
+                        {Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}% OFF
+                      </span>
+                    )}
+                  </div>
 
                   {/* Rating */}
                   <div className="flex items-center gap-2">
@@ -126,7 +145,7 @@ const ProductDetail = () => {
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className={`w-5 h-5 ${
+                          className={`w-4 h-4 sm:w-5 sm:h-5 ${
                             i < Math.floor(product.rating)
                               ? "text-accent fill-accent"
                               : "text-muted-foreground"
@@ -134,13 +153,13 @@ const ProductDetail = () => {
                         />
                       ))}
                     </div>
-                    <span className="text-lg text-muted-foreground">
+                    <span className="text-base sm:text-lg text-muted-foreground">
                       ({product.rating})
                     </span>
                   </div>
 
                   {/* Description */}
-                  <p className="text-lg text-muted-foreground leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                     {product.description}
                   </p>
 

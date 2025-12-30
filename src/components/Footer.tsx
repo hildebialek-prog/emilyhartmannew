@@ -192,35 +192,35 @@ const Footer = () => {
     <footer className="bg-foreground text-background">
       {/* Newsletter Section */}
       <div className="border-b border-background/10">
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col md:flex-row items-center justify-between gap-6"
+            className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6"
           >
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Stay Updated</h3>
-              <p className="text-background/70">
+            <div className="text-center md:text-left">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2">Stay Updated</h3>
+              <p className="text-background/70 text-sm sm:text-base">
                 Subscribe to our newsletter for exclusive deals and updates.
               </p>
             </div>
-            <form onSubmit={handleSubscribe} className="flex w-full md:w-auto gap-3">
-              <div className="flex-1">
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row w-full md:w-auto gap-3">
+              <div className="flex-1 w-full">
                 <Input
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={handleEmailChange}
-                  className={`bg-background/10 border-background/20 text-background placeholder:text-background/50 w-full md:w-80 ${emailError ? "border-destructive" : ""}`}
+                  className={`bg-background/10 border-background/20 text-background placeholder:text-background/50 w-full md:w-80 text-sm sm:text-base ${emailError ? "border-destructive" : ""}`}
                   disabled={isSubmitting}
                 />
                 {emailError && (
-                  <p className="text-destructive text-sm mt-1">{emailError}</p>
+                  <p className="text-destructive text-xs sm:text-sm mt-1">{emailError}</p>
                 )}
               </div>
-              <Button variant="accent" type="submit" disabled={isSubmitting}>
+              <Button variant="accent" type="submit" disabled={isSubmitting} className="w-full sm:w-auto">
                 {isSubmitting ? (
                   "Subscribing..."
                 ) : (
@@ -236,8 +236,8 @@ const Footer = () => {
       </div>
 
       {/* Main Footer */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -248,11 +248,11 @@ const Footer = () => {
             <a
               href="/"
               onClick={handleHomeClick}
-              className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent cursor-pointer hover:opacity-80 transition-opacity inline-block"
+              className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent cursor-pointer hover:opacity-80 transition-opacity inline-block"
             >
               Emily Hartman
             </a>
-            <p className="text-background/70 mb-6">
+            <p className="text-background/70 mb-4 sm:mb-6 text-sm sm:text-base">
               Your trusted destination for premium computer accessories and phone accessories. 
               Quality you can count on, service you'll love.
             </p>
@@ -263,21 +263,21 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm border border-background/20 rounded-lg px-3 py-2 mb-6"
+              className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm border border-background/20 rounded-lg px-3 py-2 mb-4 sm:mb-6"
             >
               <BadgeCheck className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-background/90">Verified Business</span>
+              <span className="text-xs sm:text-sm font-medium text-background/90">Verified Business</span>
             </motion.div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-3 sm:gap-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:-translate-y-1 hover:scale-110"
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:-translate-y-1 hover:scale-110"
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
               ))}
             </div>
@@ -290,14 +290,14 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-3">
+            <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Quick Links</h3>
+            <ul className="space-y-2 sm:space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
                     onClick={(e) => link.isHome ? handleHomeClick(e) : handleFooterLink(link.href, e)}
-                    className="text-background/70 hover:text-background transition-all duration-300 inline-block hover:-translate-y-0.5 cursor-pointer"
+                    className="text-background/70 hover:text-background transition-all duration-300 inline-block hover:-translate-y-0.5 cursor-pointer text-sm sm:text-base"
                   >
                     {link.name}
                   </a>
@@ -313,14 +313,14 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="font-semibold text-lg mb-4">Categories</h3>
-            <ul className="space-y-3">
+            <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Categories</h3>
+            <ul className="space-y-2 sm:space-y-3">
               {categories.map((category) => (
                 <li key={category}>
                   <a
                     href="#categories"
                     onClick={(e) => handleCategoryClick(category, e)}
-                    className="text-background/70 hover:text-background transition-all duration-300 inline-block hover:-translate-y-0.5 cursor-pointer"
+                    className="text-background/70 hover:text-background transition-all duration-300 inline-block hover:-translate-y-0.5 cursor-pointer text-sm sm:text-base"
                   >
                     {category}
                   </a>
@@ -336,21 +336,21 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
-            <div className="space-y-3 text-background/70">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <p>Youngstoun Court 20316<br />Hagerstown Maryland 21742</p>
+            <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Contact Us</h3>
+            <div className="space-y-2 sm:space-y-3 text-background/70">
+              <div className="flex items-start gap-2 sm:gap-3">
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
+                <p className="text-sm sm:text-base">Youngstoun Court 20316<br />Hagerstown Maryland 21742</p>
               </div>
-              <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="mailto:kwgxxnrbi232@outlook.com" className="hover:text-background transition-all duration-300 inline-block hover:-translate-y-0.5">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <a href="mailto:kwgxxnrbi232@outlook.com" className="hover:text-background transition-all duration-300 inline-block hover:-translate-y-0.5 text-sm sm:text-base break-all">
                   kwgxxnrbi232@outlook.com
                 </a>
               </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="tel:+19036180982" className="hover:text-background transition-all duration-300 inline-block hover:-translate-y-0.5">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <a href="tel:+19036180982" className="hover:text-background transition-all duration-300 inline-block hover:-translate-y-0.5 text-sm sm:text-base">
                   +1 9036180982
                 </a>
               </div>
@@ -361,19 +361,19 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-background/10">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-              <p className="text-background/60">© 2024 Emily Hartman. All rights reserved.</p>
-              <div className="flex items-center gap-2 bg-background/10 backdrop-blur-sm border border-background/20 rounded-lg px-3 py-1.5">
-                <BadgeCheck className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-background/90">Verified Business</span>
+        <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4 text-xs sm:text-sm">
+            <div className="flex flex-col md:flex-row items-center gap-3 sm:gap-4 md:gap-6">
+              <p className="text-background/60 text-center md:text-left">© 2024 Emily Hartman. All rights reserved.</p>
+              <div className="flex items-center gap-2 bg-background/10 backdrop-blur-sm border border-background/20 rounded-lg px-2 sm:px-3 py-1 sm:py-1.5">
+                <BadgeCheck className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
+                <span className="text-xs sm:text-sm font-medium text-background/90">Verified Business</span>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center gap-2 text-background/70">
+            <div className="flex flex-col md:flex-row items-center gap-1 sm:gap-2 text-background/70 text-center md:text-right">
               <span className="font-semibold text-background/90">Emily Hartman</span>
               <span className="hidden md:inline">•</span>
-              <span>Youngstoun Court 20316, Hagerstown Maryland 21742</span>
+              <span className="text-xs sm:text-sm">Youngstoun Court 20316, Hagerstown Maryland 21742</span>
             </div>
           </div>
         </div>

@@ -187,23 +187,23 @@ const Products = () => {
 
       <div className="min-h-screen">
         <Navbar />
-        <main className="pt-20 md:pt-24">
-          <section className="py-20 md:py-32 bg-gradient-hero">
-            <div className="container mx-auto px-4">
+        <main className="pt-16 sm:pt-20 md:pt-24">
+          <section className="py-12 sm:py-16 md:py-20 lg:py-32 bg-gradient-hero">
+            <div className="container mx-auto px-4 sm:px-6">
               {/* Section Header */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-center max-w-2xl mx-auto mb-12"
+                className="text-center max-w-2xl mx-auto mb-8 sm:mb-12"
               >
-                <span className="text-primary font-semibold text-sm tracking-wider uppercase">
+                <span className="text-primary font-semibold text-xs sm:text-sm tracking-wider uppercase">
                   {t("products.title")}
                 </span>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-3 sm:mt-4 mb-4 sm:mb-6">
                   {t("products.subtitle")}
                 </h1>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-muted-foreground text-sm sm:text-base md:text-lg">
                   {t("products.description")}
                 </p>
               </motion.div>
@@ -213,14 +213,14 @@ const Products = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="flex flex-wrap justify-center gap-4 mb-12"
+                className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-8 sm:mb-12"
               >
                 {categories.map((category) => (
                   <Button
                     key={category.id}
                     variant={selectedCategory === category.id ? "hero" : "outline"}
                     onClick={() => handleCategoryChange(category.id)}
-                    className="transition-all duration-300"
+                    className="transition-all duration-300 text-xs sm:text-sm px-3 sm:px-4 py-2"
                   >
                     {category.name}
                   </Button>
@@ -232,7 +232,7 @@ const Products = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12"
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12"
               >
                 {paginatedProducts.length > 0 ? (
                   paginatedProducts.map((product, index) => (
@@ -261,12 +261,13 @@ const Products = () => {
                         <button
                           onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
                           disabled={currentPage === 1}
-                          className={`h-9 px-3 flex items-center gap-1 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-all duration-300 ${
+                          className={`h-9 px-2 sm:px-3 flex items-center gap-1 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-all duration-300 text-xs sm:text-sm ${
                             currentPage === 1 ? "opacity-50 cursor-not-allowed" : "cursor-pointer hover:-translate-y-0.5"
                           }`}
                         >
-                          <ChevronLeft className="h-4 w-4" />
-                          <span>Previous</span>
+                          <ChevronLeft className="h-3 w-3 sm:h-4 sm:w-4" />
+                          <span className="hidden sm:inline">Previous</span>
+                          <span className="sm:hidden">Prev</span>
                         </button>
                       </PaginationItem>
                       
@@ -277,7 +278,7 @@ const Products = () => {
                           ) : (
                             <button
                               onClick={() => handlePageChange(page as number)}
-                              className={`h-9 w-9 flex items-center justify-center rounded-md border ${
+                              className={`h-8 w-8 sm:h-9 sm:w-9 flex items-center justify-center rounded-md border text-xs sm:text-sm ${
                                 currentPage === page
                                   ? "border-primary bg-primary text-primary-foreground"
                                   : "border-border bg-background hover:bg-accent hover:text-accent-foreground"
@@ -293,12 +294,13 @@ const Products = () => {
                         <button
                           onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                           disabled={currentPage === totalPages}
-                          className={`h-9 px-3 flex items-center gap-1 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-all duration-300 ${
+                          className={`h-9 px-2 sm:px-3 flex items-center gap-1 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-all duration-300 text-xs sm:text-sm ${
                             currentPage === totalPages ? "opacity-50 cursor-not-allowed" : "cursor-pointer hover:-translate-y-0.5"
                           }`}
                         >
-                          <span>Next</span>
-                          <ChevronRight className="h-4 w-4" />
+                          <span className="hidden sm:inline">Next</span>
+                          <span className="sm:hidden">Next</span>
+                          <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4" />
                         </button>
                       </PaginationItem>
                     </PaginationContent>

@@ -1,12 +1,32 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleViewDetails = () => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const aboutSection = document.getElementById("about");
+        if (aboutSection) {
+          aboutSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300);
+    } else {
+      const aboutSection = document.getElementById("about");
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-16 md:pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-16 md:pt-20 pb-20 md:pb-0 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -17,7 +37,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-2xl">
           {/* Verified Business Badge - Top Right */}
           <motion.div
@@ -46,7 +66,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6"
           >
             Premium{" "}
             <span className="text-gradient">Computer & Phone</span>
@@ -59,7 +79,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-lg"
           >
             Discover premium computer accessories and phone accessories that enhance your productivity and protect your devices. Quality products for your digital lifestyle.
           </motion.p>
@@ -69,16 +89,21 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap gap-4"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4"
           >
-            <Button variant="hero" size="xl" asChild>
+            <Button variant="hero" size="lg" className="w-full sm:w-auto sm:text-lg" asChild>
               <Link to="/products">
                 Explore Products
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
               </Link>
             </Button>
-            <Button variant="heroOutline" size="xl">
-              View Deals
+            <Button 
+              variant="heroOutline" 
+              size="lg" 
+              className="w-full sm:w-auto sm:text-lg"
+              onClick={handleViewDetails}
+            >
+              View Details
             </Button>
           </motion.div>
 
@@ -87,16 +112,16 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex gap-8 md:gap-12 mt-12 pt-8 border-t border-border/50"
+            className="flex gap-4 sm:gap-6 md:gap-8 lg:gap-12 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-border/50"
           >
             {[
               { value: "10K+", label: "Products" },
               { value: "50K+", label: "Happy Customers" },
               { value: "99%", label: "Satisfaction" },
             ].map((stat, index) => (
-              <div key={index}>
-                <div className="text-2xl md:text-3xl font-bold text-gradient">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+              <div key={index} className="flex-1 sm:flex-none">
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gradient">{stat.value}</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}
           </motion.div>
